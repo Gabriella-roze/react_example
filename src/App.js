@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+// BrowserRouter: React component for how should React behave
+// Route: React component used to setup a rule between certail route and components to be visible
+import {BrowserRouter, Route} from 'react-router-dom';
+
+// Importing CSS
 import './App.css';
+
+// Importing components
+import Menu from './components/menu/Menu';
+import Home from './components/home/Home';
+import Gallery from './components/gallery/Gallery';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <BrowserRouter>
+          <div>
+            <Menu />
+            <Route exact path="/" component={Home} />
+            <Route path="/Gallery/" component={Gallery} />
+          </div>
+        </BrowserRouter>
       </div>
     );
   }
