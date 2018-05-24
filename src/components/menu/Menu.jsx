@@ -6,7 +6,7 @@ import logo from '../../logo.svg';
 class Menu extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <a className="navbar-brand logo">
           <img src={logo} className="app-logo" alt="logo" />
         </a>
@@ -22,8 +22,8 @@ class Menu extends Component {
               <Link className="nav-link" to="/gallery">Gallery</Link>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Search
+              <a className="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Search by
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <Link className="dropdown-item" to="/all_recipes">See All Recipes</Link>

@@ -10,3 +10,14 @@ dark grey: #222222;
 .App {
 
 }
+.box__margin--right {
+  margin-right: 5vw;
+  width: 35vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #274B14;
+  border-radius: 60px 20px;
+}
