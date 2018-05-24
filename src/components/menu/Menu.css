@@ -8,14 +8,7 @@
 .app-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 6vh;
-  margin: 1%;
-}
-.text__menu--logo {
-  color: #6CDAF7;
-  font-family: 'Abril Fatface', cursive;
-  font-size: 1.2em;
-  margin: auto 10px auto 5px;
-
+  margin: 1% 1% 1% 2%;
 }
 
 /* TEXT */

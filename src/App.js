@@ -9,8 +9,9 @@ import './App.css';
 
 // Importing components
 import Menu from './components/menu/Menu';
-import Home from './components/home/Home';
+import AllRecipes from './components/all_recipes/AllRecipes';
 import Gallery from './components/gallery/Gallery';
+import Home from './components/home/Home';
 
 class App extends Component {
   render() {
@@ -20,7 +21,9 @@ class App extends Component {
           <div>
             <Menu />
             <Route exact path="/" component={Home} />
-            <Route path="/Gallery/" component={Gallery} />
+            <Route path="/gallery/" component={Gallery} />
+            <Route path="/all_recipes/" component={AllRecipes} />
+
           </div>
         </BrowserRouter>
       </div>
